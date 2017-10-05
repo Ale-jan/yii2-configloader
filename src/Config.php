@@ -7,17 +7,17 @@ class Config
      * @var bool|null $local whether to check for local configuration overrides.
      * The default is `null`, which will check `ENABLE_LOCALCONF` env var.
      */
-    public $local;
+    private $local;
     
     /**
      * @var string the configs directory
      */
-    public $directory;
+    private $directory;
 
     /**
      * @var array common file names
      */
-    public $commonConfigFiles = ['main'];
+    private $commonConfigFiles = ['main'];
     
     /**
      * Initialize the app directory path and the Yii environment.

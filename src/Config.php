@@ -119,6 +119,7 @@ class Config
         $configs = array_map(function ($file) { return require($file); }, $files);
         $configs[] = $config;
         if (class_exists('yii\helpers\ArrayHelper', false)) {
+            var_dump('ok');
             return call_user_func_array('yii\helpers\ArrayHelper::merge', $configs);
         } else {
             return call_user_func_array('array_merge', $configs);
@@ -167,7 +168,7 @@ class Config
         }
         
         foreach ($configsNames as $name) {
-            if(!is_null($file = $this->getConfigFile(sprintf('%s_%s.php', $configType, $env), $name == $configType))) {
+            if(!is_null($file = $this->getConfigFile(sprintf('%s.php', $name), $name == $configType))) {
                 $files[] = $file;
             }
         }

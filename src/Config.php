@@ -118,12 +118,8 @@ class Config
     {
         $configs = array_map(function ($file) { return require($file); }, $files);
         $configs[] = $config;
-        if (class_exists('yii\helpers\ArrayHelper', false)) {
-            var_dump('ok');
-            return call_user_func_array('yii\helpers\ArrayHelper::merge', $configs);
-        } else {
-            return call_user_func_array('array_merge', $configs);
-        }
+        
+        return call_user_func_array('yii\helpers\ArrayHelper::merge', $configs);
     }
 
     /**

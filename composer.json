@@ -15,17 +15,9 @@
         "yiisoft/yii2": "*",
         "vlucas/phpdotenv": "1.0.*"
     },
-    "support": {
-        "issues": "https://github.com/Ale-jan/yii2-configloader/issues"
-    },
     "autoload": {
         "psr-4": {
             "alejan\\yii2confload\\": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.0"
         }
     }
 }

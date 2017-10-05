@@ -1,0 +1,26 @@
+{
+    "name": "alejan/yii2-configloader",
+    "description": "Build configuration array from config files for different app parts",
+    "version": "0.1.0",
+    "keywords": ["yii2", "config", "environment"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Budim Oleg",
+            "email": "budim.oleg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "vlucas/phpdotenv": "1.0.*"
+    },
+    "support": {
+        "issues": "https://github.com/Ale-jan/yii2-configloader/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "alejan\\yii2confload\\": "src/"
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
     "name": "alejan/yii2-configloader",
     "description": "Build configuration array from config files for different app parts",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "keywords": ["yii2", "config", "environment"],
     "license": "MIT",
     "authors": [

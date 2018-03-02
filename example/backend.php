@@ -6,4 +6,5 @@ return [
         'backend',
 		self::env('VAR1'),
     ],
+    'key4' => 'val4',
 ];

@@ -111,7 +111,7 @@ class Config
             \Dotenv::load($directory);
         }
 
-        if (!defined('YII_DEBUG') && getenv('YII_DEBUG') !== false) {
+        if (getenv('YII_DEBUG') !== false) {
             define('YII_DEBUG', (bool)getenv('YII_DEBUG'));
         }
         
